@@ -56,9 +56,9 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="nav navbar-nav">
                         <li class="active"  ><a href="https://alantea.github.io/wiz-tw/">首頁 <span class="sr-only">(current)</span></a></li>
-                        <li class="dropdown" style="background-color: #e3f2fd;">
+                        <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" >常用網站<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu" role="menu"style="background-color: #e3f2fd;">
                                 <li><a target="_blank" href="http://qnq.cyberstep.com.tw/">官方網站</a></li>
                                 <li><a target="_blank" href="https://www.facebook.com/QnQTW/?epa=SEARCH_BOX">FB粉絲團</a></li>
                                 <li><a target="_blank" href="https://forum.gamer.com.tw/B.php?bsn=34725">巴哈姆特</a></li>
@@ -68,7 +68,7 @@
                         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrfx3e6EKNQ_duO5Qjc5xwniartFHJ0hRzEAq5jOso2E1lhA/viewform" target="_blank">回報問題</a></li>
                         <li class="dropdown" style="background-color: #e3f2fd;">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">填寫表單<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu" role="menu" style="background-color: #e3f2fd;">
                                 <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdU9t8wuW60dG-cZdDrRyqTbev88xWc5KE1aiRjsdgeOusBtw/viewform">一般題</a></li>
                                 <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe3onSwtEECSROljOJRWmESqeCpEgK1ALkYDaUILjHNBwRORg/viewform">OX題</a></li>
                             </ul>
@@ -117,7 +117,7 @@
 
                             <h2 class="form-signin-heading">關鍵字搜尋<small id="load-count"></small><small id="result-limit"></small></h2>
                             <label for="inputKeyword" class="sr-only">關鍵字</label>
-                            <input type="text" id="inputKeyword" class="form-control" placeholder="請輸入「拉帕帕」或「拉 帕」" required autofocus>
+                            <input type="text" id="inputKeyword" class="form-control" placeholder="請輸入「莉塔」或「莉 塔」" required autofocus>
                             <div class="">
                                 <label class="checkbox-inline">
                                     <input type="checkbox" class="from-source" name="from[]" value="一般題"> 一般題
@@ -165,18 +165,7 @@
             <div class="container text-center">
                 <ul class="list-inline">
                     <li><a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/tw/"><img alt="創用 CC 授權條款" src="https://i.creativecommons.org/l/by-sa/3.0/tw/80x15.png"></a></li>
-<!--                    <li>
-                        <a target="_blank" href="https://docs.google.com/spreadsheets/d/1wzAwAH4rJ72Zw6r-bjoUujfS5SMOEr38s99NxKmNk4g/htmlview">檢視題庫</a>
-                    </li>
-                     <li class="hidden-xs">
-                        <a target="_blank" href="https://docs.google.com/spreadsheets/d/1wzAwAH4rJ72Zw6r-bjoUujfS5SMOEr38s99NxKmNk4g/edit#gid=392831457">編輯題庫</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://docs.google.com/forms/d/13OreUrF__DqppRzefPGJ1wimz5NPO5FjWTWxyE0JULk/viewform">填寫問題表單</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://docs.google.com/forms/d/1Oy4-8Ttfz_rXDgSgytCkB1ai34NusJ3l-Nss6_cXD1E/viewform?c=0&w=1">填寫四排序問題表單</a>
-                    </li> -->
+
                     <li class="hidden-xs">
                         <a target="_blank" href="https://github.com/alantea/wiz-tw/">專案原始碼</a>
                     </li>
@@ -195,34 +184,32 @@
                     <li class="visible-xs-inline-block"><a id="btn-hide-footer" href="javascript:void(0)">隱藏版尾</a></li>
                 </ul>
             </div>
+        
         </footer>
-
-        <div id="overlay-loading">
+         <div id="overlay-loading">
             <div id="overlay-loading-content">
                 <i class="fa fa-spinner fa-pulse fa-4x"></i>
-                <div>從 google spreadsheets 讀取問題資料（<span id="loaded-count">0/9</span>）</div>
+                <div>從 google spreadsheets 讀取問題資料（<span id="loaded-count">0/2</span>）</div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="update-modal" tabindex="-1" role="dialog" aria-labelledby="update-modalLabal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="update-modalLabel">當前活動</h4>
+                    </div>
+                    <div class="modal-body">
+                        <dl>
+                            <dt>[2018-12-03] 重新改變架構</dt>
+                            <dd>混合 Google spreadsheets與新版架構</dd>
+                        </dl>
+                    </div>
+                </div>
             </div>
         </div>
 
-       
-
-<!--         <div class="modal fade" id="post-modal" tabindex="-1" role="dialog" aria-labelledby="post-modalLabal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <form action="https://docs.google.com/forms/d/13OreUrF__DqppRzefPGJ1wimz5NPO5FjWTWxyE0JULk/formResponse" method="post">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="post-modalLabel">一般問答表單</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="embed-responsive embed-responsive-4by3">
-                                <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/13OreUrF__DqppRzefPGJ1wimz5NPO5FjWTWxyE0JULk/viewform"></iframe>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div> -->
 
         <div class="modal fade" id="report-modal" tabindex="-1" role="dialog" aria-labelledby="report-modalLabal" aria-hidden="true">
             <div class="modal-dialog">
@@ -250,23 +237,7 @@
                     </div>
                     <div class="modal-body">
                         <dl>
-                            <dt>[2017-10-20] 新增QTE複選、OX、題型紀錄</dt>
-                            <dd>自動記錄題型，有興趣的人可以試試看</dd>
-                        </dl>
-                        <dl>
-                            <dt>[2017-9-16] 新增尋字問答</dt>
-                            <dd>阿~ 題目好難</dd>
-                        </dl>
-                        <dl>
-                            <dt>[2017-6-30] 新增QTE題庫</dt>
-                            <dd>QTE獨立出來，方便整理</dd>
-                        </dl>
-                        <dl>
-                            <dt>[2017-3-3] 調整素材時間表，修改預設題型</dt>
-                            <dd>與原版[2017-01-20]更新類似，調整預設為連連看(魔導盃)</dd>
-                        </dl>
-                        <dl>
-                            <dt>[2016-11-12] 重新改變架構，與原版[2016-4-15]相似</dt>
+                            <dt>[2018-12-03] 重新改變架構</dt>
                             <dd>混合 Google spreadsheets與新版架構</dd>
                         </dl>
                     </div>
@@ -283,16 +254,6 @@
                     </div>
                     <div class="modal-body">
                         <form id="form-setting" class="form-horizontal">
-                            <!-- <div class="form-group">
-                                <label for="" class="col-sm-3 control-label">讀取時顯示廣告</label>
-                                <div class="col-sm-9">
-                                    <select name="adLoading" class="adLoading form-control">
-                                        <option value="1">是，我願意顯示廣告來贊助本站</option>
-                                        <option value="0">否，廣告什麼的都去死吧</option>
-                                    </select>
-                                    <span class="help-block">只有在進站時從 wikia 讀取題庫的時間顯示，讀取完畢後不會再顯示</span>
-                                </div>
-                            </div> -->
                             <div class="form-group">
                                 <label for="" class="col-sm-3 control-label">搜尋時最小字數</label>
                                 <div class="col-sm-9">
