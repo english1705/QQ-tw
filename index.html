@@ -5,9 +5,6 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="zh-TW">
     <!--<![endif]-->
-    <!--
-    Excuse 那邊的各位 person 到 me 的 homepage 有 what 事
-    -->
     <head>
         <meta charset="utf-8">
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
@@ -30,10 +27,8 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <!--[if lt IE 9]>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-        <![endif]-->
     </head>
+
     <body background="https://english1705.github.io/QQ-tw/background.jpg">
         
 <nav class="navbar  navbar-fixed-top">
@@ -41,21 +36,23 @@
 
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" >
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">切換導覽列</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="." >
+                    <a class="navbar-brand" href=".">
                         <span class="hidden-xs">《Q&Q司書解答者》題庫</span>
                         <span class="visible-xs-inline">《Q&Q司書解答者》題庫</span>
                     </a>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
+                
+
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="nav navbar-nav">
                         <li class="active"  ><a href="https://alantea.github.io/wiz-tw/">首頁 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#material-modal">當前活動</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" >常用網站<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu"style="background-color: #e3f2fd;">
@@ -64,8 +61,6 @@
                                 <li><a target="_blank" href="https://forum.gamer.com.tw/B.php?bsn=34725">巴哈姆特</a></li>
                                 <li><a target="_blank" href="https://kekeke.cc/%E5%8F%B0%E7%89%88%E5%8F%B8%E6%9B%B8%E8%A7%A3%E7%AD%94%E8%80%85">kekeke聊天室</a></li>
                             </ul>
-                        <li><a href="#" data-toggle="modal" data-target="#material-modal">當前活動</a></li>
-                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrfx3e6EKNQ_duO5Qjc5xwniartFHJ0hRzEAq5jOso2E1lhA/viewform" target="_blank">回報問題</a></li>
                         <li class="dropdown" style="background-color: #e3f2fd;">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">填寫表單<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu" style="background-color: #e3f2fd;">
@@ -73,24 +68,16 @@
                                 <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe3onSwtEECSROljOJRWmESqeCpEgK1ALkYDaUILjHNBwRORg/viewform">OX題</a></li>
                             </ul>
                         </li>
-                        <!-- <li><a href="#" data-toggle="modal" data-target="#post-modal">填寫表單</a></li> -->
+                                               <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrfx3e6EKNQ_duO5Qjc5xwniartFHJ0hRzEAq5jOso2E1lhA/viewform" target="_blank">題目問題回報</a></li>
                         <li><a href="#" data-toggle="modal" data-target="#setting-modal">設定</a></li>
                         <li class="visible-xs-block divider"></li>
-                        <li class="visible-xs-block">
-                            <a target="_blank" href="https://github.com/alantea/wiz-tw/">專案原始碼</a>
-                        </li>
+
                     </ul>
                     <ul id="nav-share" class="nav navbar-nav navbar-right">
                         <li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://alantea.github.io/wiz-tw/" title="分享到 Facebook"><i class="fa fa-facebook-square"></i></a></li>
-                        <!--
-                        <li><a target="_blank" href="https://twitter.com/home?status=%E3%80%8A%E5%95%8F%E7%AD%94RPG%20%E9%AD%94%E6%B3%95%E4%BD%BF%E8%88%87%E9%BB%91%E8%B2%93%E7%B6%AD%E8%8C%B2%E3%80%8B%E9%A1%8C%E5%BA%AB%E6%90%9C%E5%B0%8B%20http://chrisliuqq.github.io/wiz-tw/" title="分享到 Twitter"><i class="fa fa-twitter-square"></i></a></li>-->
+                        
+                        <li><a target="_blank" href="https://twitter.com/home?status=%E3%80%8A%E5%95%8F%E7%AD%94RPG%20%E9%AD%94%E6%B3%95%E4%BD%BF%E8%88%87%E9%BB%91%E8%B2%93%E7%B6%AD%E8%8C%B2%E3%80%8B%E9%A1%8C%E5%BA%AB%E6%90%9C%E5%B0%8B%20http://chrisliuqq.github.io/wiz-tw/" title="分享到 Twitter"><i class="fa fa-twitter-square"></i></a></li>
                         <li><a target="_blank" href="https://plus.google.com/share?url=http://alantea.github.io/wiz-tw/" title="分享到 Google+"><i class="fa fa-google-plus-square"></i></a></li>
-
-                        <!-- <li>
-                            <a id="link-svg-plurk" target="_blank" href="http://www.plurk.com/?status=%E3%80%8A%E5%95%8F%E7%AD%94RPG%20%E9%AD%94%E6%B3%95%E4%BD%BF%E8%88%87%E9%BB%91%E8%B2%93%E7%B6%AD%E8%8C%B2%E3%80%8B%E9%A1%8C%E5%BA%AB%E6%90%9C%E5%B0%8B%20http://chrisliuqq.github.io/wiz-tw/&qualifier=shares" title="分享到 Plurk">
-                                <svg id="svg-plurk" enable-background="new 0 0 18 18" width="18px" height="18px" version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M65.777,5.5H33.439H22.024H10.609v90h22.83V70.609h55.17v-3.777V47.961V5.5h-4.76H65.777z M65.777,47.961H33.439V28.149  h32.338V47.961z"/></svg>
-                            </a>
-                        </li> -->
                     </ul>
             </div>
 </nav>
@@ -158,25 +145,22 @@
 
                 </div>
             </div>
-
-        </div>
+          </div>
 
         <footer id="footer" class="footer hidden-print">
             <div class="container text-center">
                 <ul class="list-inline">
                     <li><a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/tw/"><img alt="創用 CC 授權條款" src="https://i.creativecommons.org/l/by-sa/3.0/tw/80x15.png"></a></li>
-
-                    <li class="hidden-xs">
-                        <a target="_blank" href="https://github.com/alantea/wiz-tw/">專案原始碼</a>
-                    </li>
+<li>
+                        <a target="_blank" href="https://github.com/english1705/QQ-tw">專案原始碼</a>
                     <li>
-                        <a target="_blank" href="https://github.com/alantea/wiz-tw/issues">回報網頁問題</a>
+                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfrfx3e6EKNQ_duO5Qjc5xwniartFHJ0hRzEAq5jOso2E1lhA/viewform">回報網頁問題</a>
                     </li>
                     <li>
                         <a href="#" data-toggle="modal" data-target="#update-modal">更新紀錄</a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://github.com/alantea">聯絡作者</a>
+                        <a target="_blank" href="https://home.gamer.com.tw/homeindex.php">聯絡作者</a>
                     </li>
                     <li class="hidden-xs">
                         本搜尋器改自<a target="_blank" href="http://chrisliuqq.github.io/wiz-tw/">黑貓搜尋器</a>by chrisliu
@@ -184,26 +168,44 @@
                     <li class="visible-xs-inline-block"><a id="btn-hide-footer" href="javascript:void(0)">隱藏版尾</a></li>
                 </ul>
             </div>
-        
         </footer>
-         <div id="overlay-loading">
+
+        <div id="overlay-loading">
             <div id="overlay-loading-content">
                 <i class="fa fa-spinner fa-pulse fa-4x"></i>
-                <div>從 google spreadsheets 讀取問題資料（<span id="loaded-count">0/2</span>）</div>
+                <div>從 google spreadsheets 讀取問題資料（<span id="loaded-count">0/9</span>）</div>
             </div>
         </div>
-        
-        <div class="modal fade" id="update-modal" tabindex="-1" role="dialog" aria-labelledby="update-modalLabal" aria-hidden="true">
+
+       <div class="modal fade" id="material-modal" tabindex="-1" role="dialog" aria-labelledby="material-modalLabel" aria-hidden="true" >
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header" style="background-color: #e3f2fd;">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="update-modalLabel">當前活動</h4>
+                        <span style="color:#FF8033; font-size:24px;">當前活動</span>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" style="background-color: #e3f2fd;">
+                        <img src="https://i.imgur.com/Ah0zSkd.png">
                         <dl>
-                            <dt>[2018-12-03] 重新改變架構</dt>
-                            <dd>混合 Google spreadsheets與新版架構</dd>
+                            <a target="_blank" href="http://qnq.cyberstep.com.tw/info/topic/event/16081#No1m">TV動畫『小邪神飛踢』合作活動限定新記錄書登場！</a>
+                            <dd></dd>
+
+<span style="color:#E60000; font-size:14px;">合作活動時間：2018年12月4日16:00～12月18日15:00</span>
+                        </dl>
+<img src="https://i.imgur.com/19tGNpn.png">
+                        <dl>
+                            <a target="_blank" href="http://qnq.cyberstep.com.tw/info/topic/event/16077">TV動畫『小邪神飛踢！』合作活動開始囉！</a>
+                            <dd></dd>
+
+<span style="color:#E60000; font-size:14px;">合作活動時間：2018年12月4日16:00～12月18日15:00</span>
+                        </dl>
+                        <dl>
+                            <img src="https://i.imgur.com/VjsFJM2.png">
+                        <dl>
+                            <a target="_blank" href="http://qnq.cyberstep.com.tw/info/topic/event/2706">『尼伯龍根之歌』最速擊破活動實施！</a>
+                            <dd></dd>
+
+<span style="color:#E60000; font-size:14px;">活動時間：2018年11月29日16:00～2018年12月19日（三）15:00</span>
                         </dl>
                     </div>
                 </div>
@@ -231,13 +233,13 @@
         <div class="modal fade" id="update-modal" tabindex="-1" role="dialog" aria-labelledby="update-modalLabal" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header" style="background-color: #e3f2fd;">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="update-modalLabel">更新紀錄</h4>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" style="background-color: #e3f2fd;">
                         <dl>
-                            <dt>[2018-12-03] 重新改變架構</dt>
+                            <dt>[2018-12-04] 重新改變架構</dt>
                             <dd>混合 Google spreadsheets與新版架構</dd>
                         </dl>
                     </div>
@@ -254,6 +256,7 @@
                     </div>
                     <div class="modal-body">
                         <form id="form-setting" class="form-horizontal">
+                           
                             <div class="form-group">
                                 <label for="" class="col-sm-3 control-label">搜尋時最小字數</label>
                                 <div class="col-sm-9">
