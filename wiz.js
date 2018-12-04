@@ -140,7 +140,7 @@ wizLoader = (function() {
     tmp = data.feed.id.$t.split('/');
     if (tmp.length === 9) {
       if (tmp[6] === 'os8hyc1') {
-        return this._loadNormal([data.feed.entry, '分類題']);
+        return this._loadNormal([data.feed.entry, '一般題']);
       }
       if (tmp[6] === 'o2cw2x5') {
         return this._loadNormal([data.feed.entry, '填空題']);
@@ -187,7 +187,7 @@ wizLoader = (function() {
         }
         tmp[keys[col]] = entry.content.$t;
         if (col === 3) {
-          if (name === '分類題') {
+          if (name === '一般題') {
             tmp['type'] = '分類題';
           }
           if (name === '填空題') {
