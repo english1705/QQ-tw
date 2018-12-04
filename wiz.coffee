@@ -123,7 +123,7 @@ class wizLoader
 #            if tmp[6] == 'or1iuun'
 #                return @_loadDaily (data.feed.entry)
             if tmp[6] == 'os8hyc1'
-                return @_loadNormal ([data.feed.entry, '分類題'])
+                return @_loadNormal ([data.feed.entry, '一般題'])
             if tmp[6] == 'o2cw2x5'
                 return @_loadNormal ([data.feed.entry, '填空題'])
             if tmp[6] == 'op44ln6'
@@ -162,8 +162,8 @@ class wizLoader
                 tmp[keys[col]] = entry.content.$t
 
                 if col == 3
-                    if name == '分類題'
-                        tmp['type'] = '分類題'
+                    if name == '一般題'
+                        tmp['type'] = '一般題'
                     if name == '填空題'
                         tmp['type'] = '填空題'
                     if name == '連連看'
@@ -346,7 +346,7 @@ class wizLoader
                 if typeof(r.question) == "undefined"
                     return true
 
-                if r.type == "分類題"
+                if r.type == "一般題"
                     html += '<tr data-pos="XXD" data-type="' + r.type + '"><td class="td-more"><a href="javascript:void(0);" class="btn-more">更多</a></td><td><div class="question">' + wizLoader.highlight(val, r.question) + '</div><div class="text-danger">' + wizLoader.htmlEncode(r.answer).replace(/\n/, "<br />") + '</div></td></tr>'
 
                 else if r.type == "連連看"
