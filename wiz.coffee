@@ -81,11 +81,11 @@ class wizLoader
     @option =
         excelIds:
             classify:
-                sheedId: "11cvdYTlJyXYGDFClkG8MqYn4yKmd0eZ8joNF_HPV56k"
-                gridId:  "os8hyc1"
+                sheedId: "1hccBm0JPSuZgG472UML7NglUETlzkyV8zC3muI-d_TY"
+                gridId:  "oymg4yh"
             ox:
-                sheedId: "1-5iop718lUUzlJ__ON60juOr9tgSBYoGIQb43GFqBSU"
-                gridId:  "o1yqdj2"
+                sheedId: "1uzmfNI8MEMlRYY1U8-s3olq7XvuNdjmm4zH6CCcwqx8"
+                gridId:  "oy9mmi3"
 #        loadCount: 0
 
     @addScript: (entry) ->
@@ -101,9 +101,9 @@ class wizLoader
 #                return @_loadSort (data.feed.entry)
 #            if tmp[6] == 'or1iuun'
 #                return @_loadDaily (data.feed.entry)
-            if tmp[6] == 'os8hyc1'
+            if tmp[6] == 'oymg4yh'
                 return @_loadNormal ([data.feed.entry, '一般題'])
-
+            if tmp[6] == 'oy9mmi3'
             return @_loadNormal ([data.feed.entry, 'OX題'])
 
     @_loadNormal: (indata) ->
