@@ -83,27 +83,6 @@ class wizLoader
             classify:
                 sheedId: "11cvdYTlJyXYGDFClkG8MqYn4yKmd0eZ8joNF_HPV56k"
                 gridId:  "os8hyc1"
-            fill:
-                sheedId: "1pa_czWOHLPdoBTuckxdbjFoFcPqSh4ZLP4qB9LjI7VM"
-                gridId:  "o2cw2x5"
-            normal:
-                sheedId: "1aLq_rLTl2SRwfbpL5ti5fOUw_VIopTDORskECJqSTow"
-                gridId:  "op44ln6"
-            sort:
-                sheedId: "1VGkwZhZLYHCtLexGn-0gpiIcorQ0rH0ULKirl-sRpeE"
-                gridId:  "oskx7l9"
-            daily:
-                sheedId: "1jyP__9G2RqkoUuAT9o0SlwrYrJc_fW7ciiTphX6XuW4"
-                gridId:  "or1iuun"
-            qtefib:
-                sheedId: "1PI9_KO-b9pB6iAa3aN9boaJGx_TVN8DGD-jl23kwRCQ"
-                gridId:  "ol31bpk"
-            qtechoices:
-                sheedId: "1LM_CwiGjAmAaXEjS9StSlPUagqRDN-PAiRd0FCd2kfs"
-                gridId:  "ocjs4br"
-            wordlink:
-                sheedId: "1ug49hf6tKn6xI9X4r69fVm8oifRcDtfVV4bQz4257Z0"
-                gridId:  "o37ls6y"
             ox:
                 sheedId: "1-5iop718lUUzlJ__ON60juOr9tgSBYoGIQb43GFqBSU"
                 gridId:  "o1yqdj2"
@@ -124,22 +103,8 @@ class wizLoader
 #                return @_loadDaily (data.feed.entry)
             if tmp[6] == 'os8hyc1'
                 return @_loadNormal ([data.feed.entry, '一般題'])
-            if tmp[6] == 'o2cw2x5'
-                return @_loadNormal ([data.feed.entry, '填空題'])
-            if tmp[6] == 'op44ln6'
-                return @_loadNormal ([data.feed.entry, '連連看'])
-            if tmp[6] == 'oskx7l9'
-                return @_loadNormal ([data.feed.entry, '滑動題'])
-            if tmp[6] == 'or1iuun'
-                return @_loadNormal ([data.feed.entry, '複選題'])
-            if tmp[6] == 'o37ls6y'
-                return @_loadNormal ([data.feed.entry, '尋字問答'])
-            if tmp[6] == 'o1yqdj2'
-                return @_loadNormal ([data.feed.entry, 'OX題'])
-            if tmp[6] == 'ocjs4br'
-                return @_loadNormal ([data.feed.entry, 'QTE複選'])
 
-            return @_loadNormal ([data.feed.entry, 'QTE填空'])
+            return @_loadNormal ([data.feed.entry, 'OX題'])
 
     @_loadNormal: (indata) ->
         data = indata[0]
@@ -164,20 +129,6 @@ class wizLoader
                 if col == 3
                     if name == '一般題'
                         tmp['type'] = '一般題'
-                    if name == '填空題'
-                        tmp['type'] = '填空題'
-                    if name == '連連看'
-                        tmp['type'] = '連連看'
-                    if name == '滑動題'
-                        tmp['type'] = '滑動題'
-                    if name == '複選題'
-                        tmp['type'] = '複選題'
-                    if name == '尋字問答'
-                        tmp['type'] = '尋字問答'
-                    if name == 'QTE填空'
-                        tmp['type'] = 'QTE填空'
-                    if name == 'QTE複選'
-                        tmp['type'] = 'QTE複選'
                     if name == 'OX題'
                         tmp['type'] = 'OX題'
                     tmp['fulltext'] = "#{tmp['question']}#{tmp['answer']}".toLowerCase()
