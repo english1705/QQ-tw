@@ -14,6 +14,7 @@
 	
 	Setting = {
 	  localStorage: false,
+	defaulttype: "一般題",
 	  cache: {
 	    adLoading: "0",
 	    searchMinLength: "1",
