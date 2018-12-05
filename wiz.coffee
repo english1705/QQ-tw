@@ -10,7 +10,7 @@
 	
 	Setting =
 	    localStorage: false
-	    defaulttype: "QTE複選"
+	    defaulttype: "一般題"
 	    cache:
 	        adLoading: "0"
 	        searchMinLength: "1"
