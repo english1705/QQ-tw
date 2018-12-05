@@ -14,7 +14,6 @@
 	
 	Setting = {
 	  localStorage: false,
-	  defaulttype: "QTE複選",
 	  cache: {
 	    adLoading: "0",
 	    searchMinLength: "1",
